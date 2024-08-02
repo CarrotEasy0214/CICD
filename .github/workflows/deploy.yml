@@ -53,7 +53,7 @@ jobs:
 
       - name: Build project
         working-directory: ./
-        run: npm rub build
+        run: npm run build
 
       - name: Add SSH known hosts
         run: ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
